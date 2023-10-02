@@ -11,7 +11,7 @@ header {
 
   .topmenu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-basis: 100%;
   }
 
