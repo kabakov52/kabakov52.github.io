@@ -1,42 +1,107 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset = "UTF-8">
-      <title>
-        My first project
-      </title>
-  </head>
-  <body>
-    <ul>
-      <li><a href="http://kubsu.ru/" id="ВУЗ">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
-      <li><a href="https://kubsu.ru/">Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
-      <li><a href="http://kubsu.ru/"><img src="https://openedu.kubsu.ru/pluginfile.php/1/core_admin/logocompact/300x300/1681820896/%D0%9A%D1%83%D0%B1%D0%93%D0%A32.png" alt="Логотип КубГу"></a></li>
-      <li><a href="index.html">Сокращенная ссылка на внутреннюю странцу</a></li>
-      <li><a href="/">Сокращенная ссылка на главную страницу</a> </li>
-      <li><a href="#ВУЗ">Ссылка на фрагмент текущей страницы</a></li>
-      <li><a href="?t=k&h=e&b=q">Ссылка с тремя параметрами в URL</a></li>
-      <li><a href="?id=7464957839">Ссылка с параметром id в URL</a></li>
-      <li><a href="./index.html">Относительная ссылка на страницу в текущем каталоге</a></li>
-      <li><a href="/about">Относительная ссылка на страницу в каталоге about</a></li>
-      <li><a href="../index.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
-      <li><a href="../../index.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
-      <li>Это контекстная <a href="http://kubsu.ru/">ссылка</a> в тексте абзаца</li>
-      <li><a href="http://drugoi.site.ru/index.html#idshnik">Ссылка на фрагмент страницы стороннего сайта</a></li>
-      <li><img src="https://openedu.kubsu.ru/pluginfile.php/1/core_admin/logocompact/300x300/1681820896/%D0%9A%D1%83%D0%B1%D0%93%D0%A32.png" width="200" height="200" alt="KubSu" usemap="#tree"></li>
-      <map name="tree">
-        <area shape="rect" coords="0,0,100,100" href="http://kubsu.ru/">
-        <area shape="circle" coords="120,100,40" href="http://kubsu.ru/">
-      </map>
+
+<head>
+  <meta charset="UTF-8">
+  <title>My first project</title>
+</head>
+
+<body>
+  <ul>
+    <li>
+      <a href="http://kubsu.ru/" id="ВУЗ">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a
+        >
+      </li>
+      <li>
+        <a href="https://kubsu.ru/"
+          >Абсолютная на главную сайта kubsu.ru в протоколе https</a
+        >
+      </li>
+      <li>
+        <a href="http://kubsu.ru/"
+          ><img
+            src="https://openedu.kubsu.ru/pluginfile.php/1/core_admin/logocompact/300x300/1681820896/%D0%9A%D1%83%D0%B1%D0%93%D0%A32.png"
+            alt="Логотип КубГу"
+        ></a>
+    </li>
+    <li><a href="index.html">Сокращенная ссылка на внутреннюю странцу</a></li>
+    <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+    <li><a href="#ВУЗ">Ссылка на фрагмент текущей страницы</a></li>
+    <li><a href="?t=k&h=e&b=q">Ссылка с тремя параметрами в URL</a></li>
+    <li><a href="?id=7464957839">Ссылка с параметром id в URL</a></li>
+    <li>
+      <a href="./index.html">Относительная ссылка на страницу в текущем каталоге</a
+        >
+      </li>
+      <li>
+        <a href="/about">Относительная ссылка на страницу в каталоге about</a>
+    </li>
+    <li>
+      <a href="../index.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a
+        >
+      </li>
+      <li>
+        <a href="../../index.html"
+          >Относительная ссылка на страницу в каталоге двумя уровнями выше</a
+        >
+      </li>
+      <li>
+        Это контекстная <a href="http://kubsu.ru/">ссылка</a> в тексте абзаца
+    </li>
+    <li>
+      <a href="http://drugoi.site.ru/index.html#idshnik">Ссылка на фрагмент страницы стороннего сайта</a
+        >
+      </li>
+      <li>
+        <img
+          src="https://openedu.kubsu.ru/pluginfile.php/1/core_admin/logocompact/300x300/1681820896/%D0%9A%D1%83%D0%B1%D0%93%D0%A32.png"
+          width="200"
+          height="200"
+          alt="KubSu"
+          usemap="#tree"
+        >
+      </li>
       <li><a href="">Ссылка с пустым href</a></li>
-      <li><a>Ссылка без href</a></li>
-      <li><a href="http://kubsu.ru/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
-      <li><a href="http://kubsu.ru/"><noindex>Ссылка, запрещенная для индексации</noindex></a></li>
-      <ol>
-        <li><a href="http://kubsu.ru/" title="Заголовок 1">Первая ссылка</a></li>
-        <li><a href="http://kubsu.ru/" title="Заголовок 2">Вторая ссылка</a></li>
-      </ol>
-      <li><a href="ftp://user:password@primer.com/failik.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+    <li><a>Ссылка без href</a></li>
+    <li>
+      <a href="http://kubsu.ru/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a
+        >
+      </li>
+      <li>
+        <!--noindex-->
+          <a href="http://kubsu.ru/"
+            >Ссылка, запрещенная для индексации</a
+          ><!--/noindex-->
+      </li>
     </ul>
+      <ol>
+        <li>
+          <a href="http://kubsu.ru/" title="Заголовок 1">Первая ссылка</a>
+    </li>
+    <li>
+      <a href="http://kubsu.ru/" title="Заголовок 2">Вторая ссылка</a>
+    </li>
+    </ol>
+    <ul>
+      <li>
+        <a href="ftp://user:password@primer.com/failik.txt">Ссылка на файл на сервере FTP с авторизацией</a
+        >
+      </li>
+    </ul>
+    <map name="tree">
+      <area
+        shape="rect"
+        coords="0,0,100,100"
+        href="http://kubsu.ru/"
+        alt="Логотип кубгу"
+      >
+      <area
+        shape="circle"
+        coords="120,100,40"
+        href="http://vk.com/"
+        alt="Логотип кубгу"
+      >
+    </map>
     <form action="/" method="POST">
       <label>
         Текстовое поле ФИО:
@@ -46,7 +111,7 @@
       <br>
       <label>
         Текстовое поле телефон:
-        <br>
+        <br >
         <input name="field-tel" type="tel" value="+7 ">
       </label>
       <br>
@@ -59,17 +124,30 @@
       <label>
         Дата рождения:
         <br>
-        <input name="field-date" type="date" placeholder="Введите дату рождения">
+        <input
+          name="field-date"
+          type="date"
+        >
       </label>
       <br>
       Укажите пол:
       <br>
       <label>
-        <input name="radio-group-1" type="radio" checked="checked" value="Мужской">
+        <input
+          name="radio-group-1"
+          type="radio"
+          checked="checked"
+          value="Мужской"
+        >
         Мужской
       </label>
       <label>
-        <input name="radio-group-1" type="radio" checked="checked" value="Женский">
+        <input
+          name="radio-group-1"
+          type="radio"
+          checked="checked"
+          value="Женский"
+        >
         Женский
       </label>
       <br>
@@ -94,7 +172,12 @@
       <label>
         Биография
         <br>
-        <textarea name="field-name-biography" style="width: 175px; height: 39px;">Я родился</textarea>
+        <textarea
+          name="field-name-biography"
+          style="width: 175px; height: 39px"
+        >
+            Я родился</textarea
+        >
       </label>
       <br>
       <label>
