@@ -1,64 +1,123 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset = "UTF-8">
-      <title>
-        My second project
-      </title>
-      <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body bgcolor="#eee">
-    <header>
-        <div class="topmenu">
-          <div id="menu">
-            <nav>
-              <ul id="navigation">
-              <a href="https://t.me/groteskiy">Telegram</a> | 
-              <a href="https://www.instagram.com/perselfstudio/">Nelzyagram</a> | 
-              <a href="https://vk.com/yeeahboy">VK</a>
-            </ul>
-            </nav>
-          </div>
-          <img src="https://mir-s3-cdn-cf.behance.net/user/115/c2e94f944949081.64fee59f7f390.jpg" alt="Perself logo" class="logotype">
-          <h1 class="maintext">Студия дизайна Perself</h1>
-        </div>
-    </header>
-    <div class="polya">
-      <h2>Список гиперссылок</h2>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Задание 2</title>
+</head>
+
+<body>
+  <header>
+    <nav id="nav">
+      <a href="https://t.me/groteskiy" class="nav-button">Telegram</a>
+      <a href="https://www.instagram.com/perselfstudio/" class="nav-button">Inst</a>
+      <a href="https://vk.com/yeeahboy" class="nav-button">VK</a>
+    </nav>
+    <img src="Perself.png" alt="Perself logo" class="logo">
+    <div id="top">Perself Studio</div>
+  </header>
+  <div class="content-container">
+    <div class="title">Список ссылок</div>
+    <ul>
+      <li>
+        <a href="http://kubsu.ru/" id="ВУЗ" class="link">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a
+        >
+      </li>
+      <li>
+        <a href="https://kubsu.ru/" class="link"
+          >Абсолютная на главную сайта kubsu.ru в протоколе https</a
+        >
+      </li>
+      <li>
+        <a href="http://kubsu.ru/" 
+          ><img
+            src="https://openedu.kubsu.ru/pluginfile.php/1/core_admin/logocompact/300x300/1681820896/%D0%9A%D1%83%D0%B1%D0%93%D0%A32.png"
+            alt="Логотип КубГу"
+        ></a>
+      </li>
+      <li><a href="index.html" class="link">Сокращенная ссылка на внутреннюю странцу</a></li>
+      <li><a href="/" class="link">Сокращенная ссылка на главную страницу</a></li>
+      <li><a href="#ВУЗ" class="link">Ссылка на фрагмент текущей страницы</a></li>
+      <li><a href="http://www.site.ru/?t=k&h=e&b=q" class="link">Ссылка с тремя параметрами в URL</a></li>
+      <li><a href="http://www.site.ru/?id=7464957839" class="link">Ссылка с параметром id в URL</a></li>
+      <li>
+        <a href="./index.html" class="link">Относительная ссылка на страницу в текущем каталоге</a
+        >
+      </li>
+      <li>
+        <a href="/about" class="link">Относительная ссылка на страницу в каталоге about</a>
+      </li>
+      <li>
+        <a href="../index.html" class="link">Относительная ссылка на страницу в каталоге уровнем выше текущего</a
+        >
+      </li>
+      <li>
+        <a href="../../index.html" class="link"
+          >Относительная ссылка на страницу в каталоге двумя уровнями выше</a
+        >
+      </li>
+      <li>
+        Это контекстная <a href="http://kubsu.ru/" class="link">ссылка</a> в тексте абзаца
+      </li>
+      <li>
+        <a href="http://drugoi.site.ru/index.html#idshnik" class="link">Ссылка на фрагмент страницы стороннего сайта</a
+        >
+      </li>
+      <li>
+        <img
+          src="https://openedu.kubsu.ru/pluginfile.php/1/core_admin/logocompact/300x300/1681820896/%D0%9A%D1%83%D0%B1%D0%93%D0%A32.png"
+          width="200"
+          height="200"
+          alt="KubSu"
+          usemap="#tree"
+        >
+      </li>
+      <li><a href="" class="link">Ссылка с пустым href</a></li>
+      <li><a>Ссылка без href</a></li>
+      <li>
+        <a href="http://kubsu.ru/" rel="nofollow" class="link">Ссылка, по которой запрещен переход поисковикам</a
+        >
+      </li>
+      <li>
+        <!--noindex-->
+          <a href="http://kubsu.ru/" class="link"
+            >Ссылка, запрещенная для индексации</a
+          ><!--/noindex-->
+      </li>
+    </ul>
+      <ol>
+        <li>
+          <a href="http://kubsu.ru/" title="Заголовок 1" class="link">Первая ссылка</a>
+      </li>
+      <li>
+        <a href="http://kubsu.ru/" title="Заголовок 2" class="link">Вторая ссылка</a>
+      </li>
+      </ol>
       <ul>
-        <li><a href="http://kubsu.ru/" id="ВУЗ">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
-        <li><a href="https://kubsu.ru/">Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
-        <li><a href="http://kubsu.ru/"><img src="https://openedu.kubsu.ru/pluginfile.php/1/core_admin/logocompact/300x300/1681820896/%D0%9A%D1%83%D0%B1%D0%93%D0%A32.png" alt="Логотип КубГу"></a></li>
-        <li><a href="index.html">Сокращенная ссылка на внутреннюю странцу</a></li>
-        <li><a href="/">Сокращенная ссылка на главную страницу</a> </li>
-        <li><a href="#ВУЗ">Ссылка на фрагмент текущей страницы</a></li>
-        <li><a href="?t=k&h=e&b=q">Ссылка с тремя параметрами в URL</a></li>
-        <li><a href="?id=7464957839">Ссылка с параметром id в URL</a></li>
-        <li><a href="./index.html">Относительная ссылка на страницу в текущем каталоге</a></li>
-        <li><a href="/about">Относительная ссылка на страницу в каталоге about</a></li>
-        <li><a href="../index.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
-        <li><a href="../../index.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
-        <li>Это контекстная <a href="http://kubsu.ru/">ссылка</a> в тексте абзаца</li>
-        <li><a href="http://drugoi.site.ru/index.html#idshnik">Ссылка на фрагмент страницы стороннего сайта</a></li>
-        <li><img src="https://openedu.kubsu.ru/pluginfile.php/1/core_admin/logocompact/300x300/1681820896/%D0%9A%D1%83%D0%B1%D0%93%D0%A32.png" width="200" height="200" alt="KubSu" usemap="#tree"></li>
-        <map name="tree">
-          <area shape="rect" coords="0,0,100,100" href="http://kubsu.ru/">
-          <area shape="circle" coords="120,100,40" href="http://kubsu.ru/">
-        </map>
-        <li><a href="">Ссылка с пустым href</a></li>
-        <li><a>Ссылка без href</a></li>
-        <li><a href="http://kubsu.ru/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
-        <li><a href="http://kubsu.ru/"><noindex>Ссылка, запрещенная для индексации</noindex></a></li>
-        <ol>
-          <li><a href="http://kubsu.ru/" title="Заголовок 1">Первая ссылка</a></li>
-          <li><a href="http://kubsu.ru/" title="Заголовок 2">Вторая ссылка</a></li>
-        </ol>
-        <li><a href="ftp://user:password@primer.com/failik.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
-      </ul>
+        <li>
+          <a href="ftp://user:password@primer.com/failik.txt" class="link">Ссылка на файл на сервере FTP с авторизацией</a
+        >
+      </li>
+    </ul>
+    <map name="tree">
+      <area
+        shape="rect"
+        coords="0,0,100,100"
+        href="http://kubsu.ru/"
+        alt="Логотип кубгу"
+      >
+      <area
+        shape="circle"
+        coords="120,100,40"
+        href="http://vk.com/"
+        alt="Логотип кубгу"
+      >
+    </map>
     </div>
-    <div class="polya">
-      <h2>Таблица</h2>
-      <table border="1" cellpadding="4" cellspacing="1">
+    <div class="content-container">
+        <div class="title">Таблица</div>
+        <table>
         <tr class="string1"><th>Колонка 1</th><th>Колонка 2</th><th>Колонка 3</th><th>Колонка 4</th></tr>
         <tr class="string2"><td>Ячейка 1</td><td>Ячейка 2</td><td>Ячейка 3</td><td>Ячейка 4</td></tr>
         <tr class="string1"><td colspan="2">Ячейка 5 и Ячейка 6</td><td>Ячейка 7</td><td>Ячейка 8</td></tr>
@@ -68,80 +127,95 @@
         <tr class="string1"><td>Ячейка 22</td><td>Ячейка 23</td><td>Ячейка 24</td><td>Ячейка 25</td></tr>
       </table>
     </div>
-    <div class="polya">
-      <h2>Форма</h2>
-      <form action="/" method="POST">
-        <label>
-          Текстовое поле ФИО:
-          <br>
-          <input name="field-name" placeholder="Введите ФИО">
-        </label>
+    <div class="content-container">
+        <div class="title">Форма</div>
+        <form action="/" method="POST">
+      <label>
+        Текстовое поле ФИО:
         <br>
-        <label>
-          Текстовое поле телефон:
-          <br>
-          <input name="field-tel" type="tel" value="+7 ">
-        </label>
+        <input name="field-name" placeholder="Введите ФИО">
+      </label>
+      <br>
+      <label>
+        Текстовое поле телефон:
         <br>
-        <label>
-          Текстовое поле email:
-          <br>
-          <input name="field-email" type="email" placeholder="Введите email">
-        </label>
+        <input name="field-tel" type="tel" value="+7 ">
+      </label>
+      <br>
+      <label>
+        Текстовое поле email:
         <br>
-        <label>
-          Дата рождения:
-          <br>
-          <input name="field-date" type="date" placeholder="Введите дату рождения">
-        </label>
+        <input name="field-email" type="email" placeholder="Введите email">
+      </label>
+      <br>
+      <label>
+        Дата рождения:
         <br>
-        Укажите пол:
+        <input
+          name="field-date"
+          type="date"
+        >
+      </label>
+      <br>
+      Укажите пол:
+      <br>
+      <label>
+        <input
+          name="radio-group-1"
+          type="radio"
+          checked="checked"
+          value="Мужской"
+        >
+        Мужской
+      </label>
+      <label>
+        <input
+          name="radio-group-1"
+          type="radio"
+          value="Женский"
+        >
+        Женский
+      </label>
+      <br>
+      <label>
+        Любимые языки прграммирования
         <br>
-        <label>
-          <input name="radio-group-1" type="radio" checked="checked" value="Мужской">
-          Мужской
-        </label>
-        <label>
-          <input name="radio-group-1" type="radio" checked="checked" value="Женский">
-          Женский
-        </label>
+        <select name="field-name-4[]" multiple="multiple">
+          <option value="Значение1">Pascal</option>
+          <option value="Значение2" selected="selected">C</option>
+          <option value="Значение3" selected="selected">C++</option>
+          <option value="Значение4" selected="selected">JavaScript</option>
+          <option value="Значение5" selected="selected">PHP</option>
+          <option value="Значение6" selected="selected">Python</option>
+          <option value="Значение7" selected="selected">Java</option>
+          <option value="Значение8" selected="selected">Haskel</option>
+          <option value="Значение9" selected="selected">Clojure</option>
+          <option value="Значение10" selected="selected">Prolog</option>
+          <option value="Значение11" selected="selected">Scala</option>
+        </select>
+      </label>
+      <br>
+      <label>
+        Биография
         <br>
-        <label>
-          Любимые языки прграммирования
-          <br>
-          <select name="field-name-4[]" multiple="multiple">
-            <option value="Значение1">Pascal</option>
-            <option value="Значение2" selected="selected">C</option>
-            <option value="Значение3" selected="selected">C++</option>
-            <option value="Значение4" selected="selected">JavaScript</option>
-            <option value="Значение5" selected="selected">PHP</option>
-            <option value="Значение6" selected="selected">Python</option>
-            <option value="Значение7" selected="selected">Java</option>
-            <option value="Значение8" selected="selected">Haskel</option>
-            <option value="Значение9" selected="selected">Clojure</option>
-            <option value="Значение10" selected="selected">Prolog</option>
-            <option value="Значение11" selected="selected">Scala</option>
-          </select>
-        </label>
-        <br>
-        <label>
-          Биография
-          <br>
-          <textarea name="field-name-biography" style="width: 175px; height: 39px;">Я родился</textarea>
-        </label>
-        <br>
-        <label>
-          <input type="checkbox" checked="checked" name="check-1">
-          С контрактом ознакомлен (-а)
-        </label>
-        <br>
-        <input type="submit" value="Сохранить">
-      </form>
-  </div>
+        <textarea
+          name="field-name-biography"
+          style="width: 175px; height: 39px"
+        >
+            Я родился</textarea
+        >
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" checked="checked" name="check-1">
+        С контрактом ознакомлен (-а)
+      </label>
+      <br>
+      <input type="submit" value="Сохранить">
+    </form>
+    </div>
     <footer>
-      <div id="bottom">
-        <h1 class="textbottom">(c)Кабаков Ярослав 2023г.</h1>
-      </div>
+        <div class="footer-text">(c)Кабаков Ярослав</div>
     </footer>
-  </body>
+    </body>
 </html>
