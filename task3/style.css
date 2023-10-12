@@ -1,138 +1,282 @@
-header {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 250px;
-  padding: 15px 15px 0px 15px;
-  margin-left: -8px;
-  margin-top: -8px;
-  margin-bottom: 20px;
-  background-color: #141414;
-
-  .topmenu {
-    display: flex;
-    flex-direction: row;
-    flex-basis: 100%;
-  }
-
-  .topmenu main,
-  .topmenu aside {
-    margin: 10px;
-    padding: 10px;
-  }
-
-  .topmenu aside {
-    background-color: rgb(63, 63, 63);
-    flex: 1;
-    order: 1;
-  }
-
-  .topmenu main {
-    text-align: center;
-    background-color: rgb(63, 63, 63);
-    flex: 2;
-    order: 2;
-  }
-
-  .nav1 {
-    background-color: rgb(190, 190, 190);
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    flex: 2;
-    order: 3;
-    word-spacing: 50px;
-  }
-
-  @media screen and (min-width: 800px) {
-    .topmenu {
-      flex-direction: row;
-    }
-  }
-
-  .logotype {
-    float: left;
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-  }
-
-  .maintext {
-    margin: 10px;
-    color: #fff;
-  }
-
-  .menu {
+header
+{
+    background-color: #247BA0;
+    margin-bottom: 50px;
+}
+   
+.all-top
+{
     display: flex;
     flex-direction: column;
+}
+
+.logo-and-title
+{
     margin: 10px;
     padding: 10px;
-    background-color: rgb(224, 224, 224);
-    margin-top: 5px;
-    text-align: center;
-  }
+    display: flex;
+    flex-direction: row;
+    order: 1;
 }
 
-body {
-  background-color: #eee;
-}
-
-.polya {
-  display: flex;
-  flex-direction: column;
-  color: #141414;
-  background-color: #fff;
-}
-
-.links {
-  margin-left: auto;
-  margin-right: auto;
-  width: 960 px;
-  flex: 1;
-  order: 2;
-}
-
-.tablitsa {
-  margin-left: auto;
-  margin-right: auto;
-  width: 960 px;
-  flex: 1;
-  order: 1;
-}
-
-.forma {
-  margin-left: auto;
-  margin-right: auto;
-  width: 960 px;
-  flex: 1;
-  order: 3;
-}
-
-table {
-  border: 1;
-  color: #fff;
-  .string1 {
-    background: #444444;
-  }
-
-  .string2 {
-    background: #5f5f5f;
-  }
-}
-
-footer {
-  display: block;
-  width: 100%;
-  height: 100px;
-  padding: 15px 15px 15px 0px;
-  background-color: #141414;
-
-  .bottom {
-    vertical-align: middle;
-  }
-  .textbottom {
+#nav
+{
+    display: flex;
+    justify-content: center;
     margin: 10px;
-    color: #fff;
-    text-align: left;
-  }
+    padding: 10px;
+    align-items: center;
+    background-color: #fff;
+    order: 2;
 }
+
+.nav-button
+    {
+        display: inline-block;
+        background-color: #247BA0;
+        width: 220px;
+        height: 40px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: x-large;
+        margin-right: 7px;
+        padding-top: 10px;
+        font-family: Arial;
+        color: #fff;
+    }
+
+.logo-and-title aside
+{
+    flex: 1;
+    order: 1;
+}
+
+.logo-and-title main
+{
+    font-size: 80px;
+    text-align: left;
+    color: #fff;
+    flex: 3;
+    order: 2;
+}
+
+.page-content
+{
+    display: flex;
+    flex-direction: column;
+}
+
+    .content-container
+    {
+        font-family: Arial;
+        border-radius: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        width: 100%;
+        color: #fff;
+        background-color: #247BA0;
+    }
+
+    .link
+    {
+        font-family: Arial;
+        color: #fff;
+    }
+
+        .title
+    {
+        margin-top: 40px;
+        margin-left: 40px ;
+        font-family: Arial;
+        font-size: 50px;
+    }
+
+        table
+    {
+        margin-left: 50px;
+        margin-bottom: 20px;
+        width: 700px;
+        height: 500px;
+        margin-top: 20px;
+        border-color: #69BADD;
+    }
+
+    .string1
+    {
+        font-size: small;
+        text-align: center;
+        font-family: Arial;
+        background-color: #69BADD;
+    }
+
+    .string2
+    {
+        font-size: small;
+        text-align: center;
+        font-family: Arial;
+        background-color: #fff;
+        color: #69BADD;
+    }
+
+    form{
+        margin-left: 40px ;
+        margin-bottom: 20px;
+    }
+
+        footer
+    {
+        font-size: 30px;
+        padding-top: 40px;
+        width: 100%;
+        background-color: #247BA0;
+        height: 60px;
+        color: #fff;
+        text-align: center;
+        font-family: Arial;
+    }
+
+    #tabl
+    {
+        order: 1;
+    }
+
+    #lin
+    {
+        order: 2;
+    }
+
+    #forma
+    {
+        order: 3;
+    }
+
+    @media screen and (min-width: 800px)
+    {
+        header
+    {
+        width: 100%;
+        background-color: #8724a0;
+        height: 285px;
+        margin-bottom: 50px;
+    }
+
+    .all-top
+
+    {
+        margin-bottom: 50px;
+    }
+    .nav-button
+    {
+        display: inline-block;
+        background-color: #247BA0;
+        width: 220px;
+        height: 40px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: x-large;
+        margin-right: 7px;
+        padding-top: 10px;
+        font-family: Arial;
+        color: #fff;
+    }
+
+    .logo
+    {
+        margin-top: 40px;
+        margin-left: 75px;
+        margin-right: 55px;
+        float: left;
+    }
+
+    #top
+    {
+        padding-top: 150px;
+        padding-left: 300px;
+        font-family: Arial;
+        font-size: 80px;
+        color: #fff;
+    }
+
+    .content-container
+    {
+        font-family: Arial;
+        padding-left: 80px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-radius: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        max-width: 880px;
+        color: #fff;
+        background-color: #247BA0;
+    }
+    .link
+    {
+        font-family: Arial;
+        color: #fff;
+    }
+
+    .title
+    {
+        display: inline;
+        font-family: Arial;
+        font-size: 50px;
+    }
+
+    table
+    {
+        margin-left: 50px;
+        margin-bottom: 20px;
+        width: 700px;
+        height: 500px;
+        margin-top: 20px;
+        border-color: #69BADD;
+    }
+
+    .string1
+    {
+        font-size: small;
+        text-align: center;
+        font-family: Arial;
+        background-color: #69BADD;
+    }
+
+    .string2
+    {
+        font-size: small;
+        text-align: center;
+        font-family: Arial;
+        background-color: #fff;
+        color: #69BADD;
+    }
+
+    footer
+    {
+        font-size: 30px;
+        padding-top: 40px;
+        width: 100%;
+        background-color: #247BA0;
+        height: 60px;
+        color: #fff;
+        text-align: center;
+        font-family: Arial;
+    }
+
+        #tabl
+    {
+        order: 2;
+    }
+
+    #lin
+    {
+        order: 1;
+    }
+
+    #forma
+    {
+        order: 3;
+    }
+
+    }
