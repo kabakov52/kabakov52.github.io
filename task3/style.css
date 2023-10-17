@@ -12,31 +12,6 @@ header{
     margin-bottom: 50px;
 }
 
-@media (min-width: 800px)
-{
-    .logo-pic
-    {
-        width: 200px;
-        height: auto;
-    }
-    
-    .content-container_links
-    {
-        order: 1;
-    }
-
-    .content-container
-    {
-        order: 2;
-    }
-
-    .content-container_form
-    {
-        order: 3;
-    }
-}
-
-
 .logo-pic
 {
     width: 120px;
@@ -66,7 +41,7 @@ nav{
 
 .title
 {
-    font-size: 80px;
+    font-size: 30px;
     margin: 0px;
     padding-top: 20px;
     text-align: center;
@@ -121,8 +96,8 @@ table
 {
     margin-left: 50px;
     margin-bottom: 20px;
-    width: 700px;
-    height: 500px;
+    width: 200px;
+    height: 150px;
     margin-top: 20px;
     border-color: #69BADD;
 }
@@ -178,3 +153,27 @@ footer
     font-family: Arial;
 }
 
+@media (min-width: 800px)
+{
+    .title
+    {
+        font-size: 80px;
+    }
+    table
+    {
+        width: 500px;
+        height: 400px;
+    }
+    .content-container
+    {
+        order: 2;
+    }
+    .content-container_links
+    {
+        order: 1;
+    }
+    .content-container_form
+    {
+        order: 3;
+    }
+}
