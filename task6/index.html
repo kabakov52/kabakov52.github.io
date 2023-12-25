@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script defer src="script.js"></script> 
+  <title>Задание 6</title>
+</head>
+<body>
+   <header>
+    <div class="logo_title">
+      <img src="https://github.com/kabakov52/kabakov52.github.io/blob/main/task2/Perself.png?raw=true" alt="Perself logo" class="logo-pic mt-3 ml-3">
+      <h1 class="title mt-5">Perself Studio</h1>
+    </div>
+  </header>
+    <div class="main">
+    <label for="quantity">Количество:</label>
+    <input type="number" id="quantity" min="1" value="1"><br><br>
+
+    <label for="service">Выберите тип услуги:</label><br>
+    <input type="radio" id="service1" name="service" value="service1" checked>
+    <label for="service1">Логотип</label><br>
+    <input type="radio" id="service2" name="service" value="service2">
+    <label for="service2">Визитка</label><br>
+    <input type="radio" id="service3" name="service" value="service3">
+    <label for="service3">Постер</label><br><br>
+
+    <select id="option" style="display: none;">
+        <option value="option1">Быстро и дорого</option>
+        <option value="option2">Долго и дешево</option>
+    </select><br><br>
+
+    <label>
+        <input type="checkbox" id="property" style="display: none;"> Готовить к печати
+    </label><br><br>
+
+    <p id="totalPrice">Итоговая стоимость: 0 руб.</p>
+  </div>
+    <footer class="pt-2 mt-5">
+        <div class="footer-text">(c)Кабаков Ярослав</div>
+    </footer>
+</body>
+</html>
